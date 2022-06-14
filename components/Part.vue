@@ -7,9 +7,7 @@ import { onMounted } from 'vue'
 
 export default {
   setup () {
-    onMounted(() => {
-      console.log(window.innerWidth)
-    })
+    console.log(window.innerWidth)
   }
 }
 </script>
