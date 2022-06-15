@@ -1,5 +1,5 @@
 <template>
-  <p>Part Components!</p>
+  <p>ClientRender Components!</p>
 </template>
 
 <script>

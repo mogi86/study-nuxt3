@@ -2,13 +2,15 @@
   <h1>Index page</h1>
   <!-- rendering on client side -->
   <ClientOnly>
-    <part></part>
+    <client-render></client-render>
   </ClientOnly>
+  <server-render></server-render>
 </template>
 
 <script>
-import Part from "../components/Part";
+import ClientRender from "../components/ClientRender";
+import ServerRender from "../components/ServerRender";
 export default {
-  components: {Part}
+  components: {ServerRender, ClientRender}
 }
 </script>
