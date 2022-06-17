@@ -4,13 +4,15 @@
   <ClientOnly>
     <client-render></client-render>
   </ClientOnly>
-  <server-render></server-render>
+  <state-parent></state-parent>
 </template>
 
 <script>
 import ClientRender from "../components/ClientRender";
 import ServerRender from "../components/ServerRender";
+import StateParent from "../components/StateParent";
 export default {
-  components: {ServerRender, ClientRender}
+  components: {StateParent, ServerRender, ClientRender}
 }
+
 </script>
