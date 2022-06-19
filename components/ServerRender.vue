@@ -4,10 +4,10 @@
   <p>{{ instance.introduce() }}</p>
 </template>
 
-<script>
+<script lang="ts">
 
 import {onMounted} from "vue";
-import {useNuxtApp} from "nuxt/app";
+import {useNuxtApp, useRuntimeConfig} from "nuxt/app";
 
 export default {
   name: "ServerRender",
@@ -15,6 +15,13 @@ export default {
     const hello = useNuxtApp().$hello
     const human = useNuxtApp().$human
     const instance = new human('John', 25)
+
+    const runtimeConfig = useRuntimeConfig()
+
+    console.log('runtimeConfig', runtimeConfig)
+    // `apiSecret` is allowed to show on only server side. Therefore, it isn't able to be output on client side console.
+    console.log('apiSecret: ', runtimeConfig.apiSecret)
+    console.log('public.apiBase: ', runtimeConfig.public.apiBase)
 
     console.log('called from server side')
     onMounted(() => {
