@@ -6,11 +6,11 @@
 </template>
 
 <script lang="ts">
-import {counterProvide} from "../store/counter";
-import ServerRender from "~/components/ServerRender.vue";
-import StateIncrement from "~/components/StateIncrement.vue";
-import StateDecrement from "~/components/StateDecrement.vue";
-import StateView from "~/components/StateView.vue";
+import {counterProvide} from "@/store/counter";
+import ServerRender from "@/components/ServerRender.vue";
+import StateIncrement from "@/components/StateIncrement.vue";
+import StateDecrement from "@/components/StateDecrement.vue";
+import StateView from "@/components/StateView.vue";
 
 export default {
   name: "StateParent",

@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-import {counterInject} from "~/store/counter";
+import {counterInject} from "@/store/counter";
 
 export default {
   name: "StateView",

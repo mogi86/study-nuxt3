@@ -1,23 +1,22 @@
 <template>
   <div>
-    <button @click="increase">Increase</button>
+    <button @click="decrease">Decrease</button>
   </div>
 </template>
 
 <script lang="ts">
-import {counterInject} from "../store/counter";
+import {counterInject} from "@/store/counter"
 
 export default {
-  name: "StateIncrement",
+  name: "StateDecrement",
   setup() {
     const counter = counterInject()
-
-    function increase() {
-      counter.increment()
+    function decrease() {
+      counter.decrement()
     }
 
     return {
-      increase
+      decrease
     }
   }
 }
