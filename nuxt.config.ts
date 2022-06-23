@@ -10,5 +10,8 @@ export default defineNuxtConfig({
         public: {
             apiBase: '/api'
         }
-    }
+    },
+    buildModules: [
+        '@pinia/nuxt'
+    ],
 })

@@ -6,6 +6,7 @@
   </ClientOnly>
   <server-render></server-render>
   <state-parent></state-parent>
+  <counter-pinia-parent></counter-pinia-parent>
   <standard></standard>
 </template>
 
@@ -14,8 +15,9 @@ import ServerRender from "@/components/ServerRender.vue";
 import StateParent from "@/components/StateParent.vue";
 import Standard from "@/components/Standard.vue";
 import ClientRender from "@/components/ClientRender";
+import CounterPiniaParent from "../components/pania/CounterPiniaParent";
 export default {
-  components: {ClientRender, Standard, StateParent, ServerRender}
+  components: {CounterPiniaParent, ClientRender, Standard, StateParent, ServerRender}
 }
 
 </script>

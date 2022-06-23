@@ -1,5 +1,4 @@
 <template>
-  <server-render></server-render>
   <state-view></state-view>
   <state-increment></state-increment>
   <state-decrement></state-decrement>
