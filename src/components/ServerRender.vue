@@ -7,7 +7,8 @@
 <script lang="ts">
 
 import {onMounted} from "vue";
-import {useNuxtApp, useRuntimeConfig} from "nuxt/app";
+import {useRuntimeConfig} from "nuxt/app";
+import {useNuxtApp} from "#app"
 
 export default {
   name: "ServerRender",
