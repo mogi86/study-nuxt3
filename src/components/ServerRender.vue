@@ -7,7 +7,7 @@
 <script lang="ts">
 
 import {onMounted} from "vue";
-import {useRuntimeConfig} from "nuxt/app";
+import {useRuntimeConfig} from "#app";
 import {useNuxtApp} from "#app"
 
 export default {
