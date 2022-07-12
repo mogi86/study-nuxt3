@@ -2,7 +2,14 @@
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
-## Setup
+## Setup (Go Server)
+
+```bash
+cd go-call_api-server
+go run main.go
+```
+
+## Setup (Nuxt3)
 
 Make sure to install the dependencies:
 
