@@ -42,7 +42,7 @@ export default {
           }
       )
 
-      dataUseAsyncData.value = zipcode
+      dataUseAsyncData.value = zipcode.value
     }
 
     getByAxios()

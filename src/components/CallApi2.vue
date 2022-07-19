@@ -13,6 +13,14 @@ import { watch } from 'vue'
 export default {
   name: "CallApi2",
   setup () {
+    function wrappedUseAsyncData (key: string, url: string, asyncDataOptions = {}) {
+      return useAsyncData(
+          key,
+          () => $fetch(url, {}),
+          asyncDataOptions
+      )
+    }
+
     // lazy call call_api on client side
     // ref: https://v3.nuxtjs.org/api/composables/use-lazy-async-data/
     const { data: lazyClientData, pending: lazyClientPending, error: lazyClientError, refresh: lazyClientRefresh } = useAsyncData(
